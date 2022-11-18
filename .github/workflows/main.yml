@@ -1,0 +1,12 @@
+name: Delete Package Versions
+on:
+  workflow_dispatch:
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/delete-package-versions@v2.0.1
+        with:
+          package-name: 'nuget-1'
